@@ -56,7 +56,7 @@ class TvController extends Controller
      */
     public function store(Request $request)
     {
-        
+
     }
 
     /**
@@ -71,7 +71,9 @@ class TvController extends Controller
         ->get('https://api.themoviedb.org/3/tv/'.$id.'?append_to_response=credits,videos,images')
         ->json();
 
-        // dump($movie);
+        if (isset($tvShow['status_message'])) {
+            return view('not-found');
+        }
 
         $viewModel = new TvShowViewModel($tvShow);
 
