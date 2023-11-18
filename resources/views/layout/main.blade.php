@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>Movie app</title>
-    <link href="{{ asset('/public/css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @livewireStyles
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </head>
@@ -15,7 +15,7 @@
             <ul class="flex items-center flex-col md:flex-row">
                 <li>
                     <a href="{{ route('movies.index') }}">
-                        <img src="/public/img/cinema.svg" alt="avatar" class="w-12 h-12">
+                        <img src="/img/cinema.svg" alt="avatar" class="w-12 h-12">
                     </a>
                 </li>
                 <li class="md:ml-10 mt-3 md:mt-0">
