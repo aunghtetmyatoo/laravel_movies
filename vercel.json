@@ -6,12 +6,10 @@
         }
     },
     "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/api/index.php"
-        }
+        { "src": "/(.*)", "dest": "/api/index.php" },
+        { "src": "/img/cinema.svg", "dest": "/public/img/cinema.svg" },
+        { "src": "/css/app.css", "dest": "/public/css/app.css" }
     ],
-    "outputDirectory": "public/build",
 
     "env": {
         "APP_NAME": "Vercel Laravel",
