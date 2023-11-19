@@ -7,10 +7,10 @@
     },
     "routes": [
         { "src": "/build/(.*)", "dest": "/public/build/" },
-        { "src": "/public/(.*)", "dest": "/public/" },
         { "src": "/resources/(.*)", "dest": "/public/resources/" },
         { "src": "/favicon/(.*)", "dest": "/public/favicon/" },
-        { "src": "/(.*)", "dest": "/api/index.php" }
+        { "src": "/(.*)", "dest": "/api/index.php" },
+        { "src": "/(css|js|vendor|assets|build)/(.*)", "dest": "public/$1/$2" }
     ],
 
     "env": {
